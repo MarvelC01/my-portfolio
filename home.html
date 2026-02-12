@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="home.html" class="logo">MΛЯVΞ</a>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Work</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Web Developer & Programmer</h1>
+                    <p class="subtitle">I build exceptional digital experiences that are fast, accessible, visually appealing, and responsive.</p>
+                    <p>With over 7 years of experience in web development, I specialize in creating modern websites and applications that help businesses grow and succeed online.</p>
+                    <div class="hero-btns">
+                        <a href="portfolio.html" class="btn">View My Work</a>
+                        <a href="contact.html" class="btn btn-outline">Hire Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" alt="Developer workspace">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>What I Do</h2>
+                <p>Comprehensive web development services</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications built with modern technologies and best practices.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first approach ensuring your site looks perfect on all devices and screen sizes.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered designs that are both beautiful and intuitive to use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-content">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                
+                <div class="quote-slider">
+                    <!-- Quote 1 -->
+                    <div class="quote-slide active">
+                        <blockquote>
+                            "The web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past."
+                        </blockquote>
+                        <div class="quote-author">
+                            <div class="author-image">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg/200px-Sir_Tim_Berners-Lee_%28cropped%29.jpg" alt="Tim Berners-Lee">
+                            </div>
+                            <div class="author-info">
+                                <h4>Tim Berners-Lee</h4>
+                                <p>Inventor of the World Wide Web</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quote 2 -->
+                    <div class="quote-slide">
+                        <blockquote>
+                            “Code is just the beginning—success is what you build with it.”
+                        </blockquote>
+                        <div class="quote-author">
+                            <div class="author-image">
+                                <img src="YOOO.jpeg" alt="Marvelous Adegbule">
+                            </div>
+                            <div class="author-info">
+                                <h4>Marvelous Adegbule</h4>
+                                <p>Founder of MΛЯVΞ Industry</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quote 3 -->
+                    <div class="quote-slide">
+                        <blockquote>
+                            “Don't let the noise of others' opinions drown out your own inner voice.”
+                        </blockquote>
+                        <div class="quote-author">
+                            <div class="author-image">
+                                <img src="images.jpg" alt="Steve Jobs">
+                            </div>
+                            <div class="author-info">
+                                <h4>Steve Jobs</h4>
+                                <p>Co-founder of Apple Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quote Navigation Dots -->
+                <div class="quote-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                
+                <!-- Quote Navigation Arrows -->
+                <button class="quote-nav prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="quote-nav next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Preview -->
+    <section class="featured-projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>A glimpse of my recent work</p>
+            </div>
+            
+            <div class="projects-preview">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Temour.png" alt="Grill Shop">
+                    </div>
+                    <div class="project-info">
+                        <h3>Grill Shop</h3>
+                        <p>A fully responsive restaurant website with online ordering and reservation system.</p>
+                        <a href="portfolio.html#ecommerce" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Screenshot 2025-10-23 161946.png" alt="Flappy-bird">
+                    </div>
+                    <div class="project-info">
+                        <h3>Flappy-bird</h3>
+                        <p>A fully-working game built with Python , using python library pygame, fuly functional, and user friendly..</p>
+                        <a href="portfolio.html#dashboard" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="portfolio.html" class="btn">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    MΛЯVΞ
+                </div>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 MΛЯVΞ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="quote.js"></script>
+</body>
+</html>

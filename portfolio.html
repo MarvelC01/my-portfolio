@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work | Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="home.html" class="logo">MΛЯVΞ</a>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Work</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Portfolio Hero -->
+    <section class="page-hero portfolio-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>My Portfolio</h1>
+                <p class="subtitle">A collection of my recent projects and work</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recent Projects</h2>
+                <p>Here are a few projects I've worked on recently.</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">Game </button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="Temour.png" alt="Grill Shop">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Grill Shop</h3>
+                        <p>A fully responsive restaurant website with online ordering and reservation system.</p>
+                        <div class="project-tech">
+                            <span>Wordpress</span>
+                        </div>
+                        <a href="https://temour.free.nf/" class="project-link">View Details →</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="Screenshot 2025-10-23 161946.png" alt="Flappy-bird">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Flappy-bird</h3>
+                        <p>A fully-working game built with Python , using python library pygame, fuly functional, and user friendly..</p>
+                        <div class="project-tech">
+                            <span>Pygame</span>
+                            <span>Python</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="CIH.png" alt="CIH Programming Website">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>CIH Programming Website</h3>
+                        <p>Community Innovation Hub website for programming track</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://cih-pro.vercel.app/" class="project-link">View Details →</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="Language.png" alt="Language AI Website">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Language AI Website</h3>
+                        <p>A responsive website with drag-and-drop functionality and real-time updates.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://languageai.vercel.app/" class="project-link">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    MΛЯVΞ
+                </div>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 MΛЯVΞ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>
