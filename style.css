@@ -1136,6 +1136,64 @@ footer {
     box-shadow: none;
 }
 
+* {
+    cursor: none !important;
+}
+
+.cursor-dot,
+.cursor-ring {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
+    transition: width 0.2s, height 0.2s, background 0.2s, border 0.2s;
+}
+
+.cursor-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--primary); /* uses your existing primary color */
+}
+
+.cursor-ring {
+    width: 36px;
+    height: 36px;
+    border: 2px solid var(--primary);
+    background: transparent;
+    transition: all 0.15s ease-out;
+}
+
+/* Hover effect on interactive elements */
+a:hover ~ .cursor-ring,
+button:hover ~ .cursor-ring,
+input:hover ~ .cursor-ring,
+textarea:hover ~ .cursor-ring,
+[role="button"]:hover ~ .cursor-ring,
+.project-card:hover ~ .cursor-ring,
+.service-card:hover ~ .cursor-ring,
+.tool-card:hover ~ .cursor-ring,
+.portfolio-item:hover ~ .cursor-ring,
+.btn:hover ~ .cursor-ring {
+    width: 48px;
+    height: 48px;
+    border-width: 2px;
+    background: rgba(108, 99, 255, 0.1);
+}
+
+/* Hide on touch devices */
+@media (hover: none) and (pointer: coarse) {
+    * {
+        cursor: auto !important;
+    }
+    .cursor-dot,
+    .cursor-ring {
+        display: none;
+    }
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .hero-content {
