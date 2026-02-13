@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Creative Developer</title>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -26,7 +28,7 @@
     </header>
 
     <!-- About Hero -->
-    <section class="page-hero about-hero">
+    <section class="page-hero about-hero" data-aos="fade-up">
         <div class="container">
             <div class="page-hero-content">
                 <h1>About Me</h1>
@@ -39,10 +41,10 @@
     <section class="about-detail">
         <div class="container">
             <div class="about-content">
-                <div class="about-image">
+                <div class="about-image" data-aos="fade-right">
                     <img src="WhatsApp Image 2026-02-10 at 00.59.47.jpeg" alt="About me">
                 </div>
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-left">
                     <h2>Hello! I'm MΛЯVΞ</h2>
                     <p>A passionate full-stack developer based in Lagos. I enjoy creating things that live on the internet, whether that's websites, applications, or anything in between.</p>
                     <p>My journey in web development started back in 2025 when I decided to build my first website — turns out that taught me a lot about HTML & CSS! Since then, I've had the privilege of working on various projects including websites, tech startups, and games.</p>
@@ -50,21 +52,21 @@
                     <div class="experience-section">
                         <h3>Experience & Education</h3>
                         <div class="timeline">
-                            <div class="timeline-item">
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
                                 <div class="timeline-date">2025 - Present</div>
                                 <div class="timeline-content">
                                     <h4> Web Developer</h4>
                                     <p>Lead developer at MΛЯVΞ Innovations Inc.</p>
                                 </div>
                             </div>
-                            <div class="timeline-item">
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                                 <div class="timeline-date">2023 - 2025</div>
                                 <div class="timeline-content">
                                     <h4>Senior Student</h4>
                                     <p>Learnt how to use Ms-Word, Excel, and PowerPoint effectively.</p>
                                 </div>
                             </div>
-                            <div class="timeline-item">
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                                 <div class="timeline-date">2021 - 2023</div>
                                 <div class="timeline-content">
                                     <h4>Junior Student</h4>
@@ -81,12 +83,12 @@
     <!-- Skills Section -->
     <section class="skills-section">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2>My Skills</h2>
                 <p>Technologies and tools I work with</p>
             </div>
             <div class="skills-container">
-                <div class="skill-category">
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="0">
                     <h3><i class="fas fa-code"></i> Frontend</h3>
                     <div class="skill-tag">HTML5</div>
                     <div class="skill-tag">CSS3</div>
@@ -94,12 +96,12 @@
                     <div class="skill-tag">React</div>
                     <div class="skill-tag">Vue.js</div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="100">
                     <h3><i class="fas fa-server"></i> Backend</h3>
                     <div class="skill-tag">Node.js</div>
                     <div class="skill-tag">Python</div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="200">
                     <h3><i class="fas fa-tools"></i> Tools & Others</h3>
                     <div class="skill-tag">Git & GitHub</div>
                     <div class="skill-tag">WordPress</div>
@@ -131,6 +133,17 @@
     <!-- ===== CUSTOM CURSOR ===== -->
     <div class="cursor-dot"></div>
     <div class="cursor-ring"></div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+        easing: 'ease-in-out'
+      });
+    </script>
 
     <script src="main.js"></script>
 </body>

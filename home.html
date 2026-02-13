@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Creative Developer</title>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -30,15 +32,15 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Web Developer & Programmer</h1>
-                    <p class="subtitle">I build exceptional digital experiences that are fast, accessible, visually appealing, and responsive.</p>
-                    <p>With over 1 years of experience in web development, I specialize in creating modern websites and applications that help businesses grow and succeed online.</p>
-                    <div class="hero-btns">
+                    <h1 data-aos="fade-up">Web Developer & Programmer</h1>
+                    <p class="subtitle" data-aos="fade-up" data-aos-delay="200">I build exceptional digital experiences that are fast, accessible, visually appealing, and responsive.</p>
+                    <p data-aos="fade-up" data-aos-delay="400">With over 7 years of experience in web development, I specialize in creating modern websites and applications that help businesses grow and succeed online.</p>
+                    <div class="hero-btns" data-aos="fade-up" data-aos-delay="600">
                         <a href="portfolio.html" class="btn">View My Work</a>
                         <a href="contact.html" class="btn btn-outline">Hire Me</a>
                     </div>
                 </div>
-                <div class="hero-image">
+                <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
                     <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" alt="Developer workspace">
                 </div>
             </div>
@@ -48,26 +50,26 @@
     <!-- Services Preview -->
     <section class="services-preview">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2>What I Do</h2>
                 <p>Comprehensive web development services</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
                     <div class="service-icon">
                         <i class="fas fa-code"></i>
                     </div>
                     <h3>Web Development</h3>
                     <p>Custom websites and web applications built with modern technologies and best practices.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                     <h3>Responsive Design</h3>
                     <p>Mobile-first approach ensuring your site looks perfect on all devices and screen sizes.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-icon">
                         <i class="fas fa-paint-brush"></i>
                     </div>
@@ -79,7 +81,7 @@
     </section>
 
     <!-- Quote Section -->
-    <section class="quote-section">
+    <section class="quote-section" data-aos="fade-up">
         <div class="container">
             <div class="quote-content">
                 <div class="quote-icon">
@@ -141,12 +143,12 @@
     <!-- Featured Projects Preview -->
     <section class="featured-projects">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2>Featured Projects</h2>
                 <p>A glimpse of my recent work</p>
             </div>
             <div class="projects-preview">
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-right">
                     <div class="project-img">
                         <img src="Temour.png" alt="Grill Shop">
                     </div>
@@ -156,7 +158,7 @@
                         <a href="portfolio.html#ecommerce" class="project-link">View Project →</a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-left">
                     <div class="project-img">
                         <img src="Screenshot 2025-10-23 161946.png" alt="Flappy-bird">
                     </div>
@@ -167,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center">
+            <div class="text-center" data-aos="fade-up">
                 <a href="portfolio.html" class="btn">View All Projects</a>
             </div>
         </div>
@@ -194,6 +196,17 @@
     <!-- ===== CUSTOM CURSOR ===== -->
     <div class="cursor-dot"></div>
     <div class="cursor-ring"></div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+        easing: 'ease-in-out'
+      });
+    </script>
 
     <script src="main.js"></script>
     <script src="quote.js"></script>

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Work | Creative Developer</title>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -26,7 +28,7 @@
     </header>
 
     <!-- Portfolio Hero -->
-    <section class="page-hero portfolio-hero">
+    <section class="page-hero portfolio-hero" data-aos="fade-up">
         <div class="container">
             <div class="page-hero-content">
                 <h1>My Portfolio</h1>
@@ -38,19 +40,19 @@
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2>Recent Projects</h2>
                 <p>Here are a few projects I've worked on recently.</p>
             </div>
             
-            <div class="portfolio-filter">
+            <div class="portfolio-filter" data-aos="fade-up">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="web">Web Design</button>
                 <button class="filter-btn" data-filter="app">Game </button>
             </div>
             
             <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="web">
+                <div class="portfolio-item" data-category="web" data-aos="zoom-in" data-aos-delay="0">
                     <div class="portfolio-img">
                         <img src="Temour.png" alt="Grill Shop">
                     </div>
@@ -64,7 +66,7 @@
                     </div>
                 </div>
                 
-                <div class="portfolio-item" data-category="app">
+                <div class="portfolio-item" data-category="app" data-aos="zoom-in" data-aos-delay="100">
                     <div class="portfolio-img">
                         <img src="Screenshot 2025-10-23 161946.png" alt="Flappy-bird">
                     </div>
@@ -79,7 +81,7 @@
                     </div>
                 </div>
                 
-                <div class="portfolio-item" data-category="web">
+                <div class="portfolio-item" data-category="web" data-aos="zoom-in" data-aos-delay="200">
                     <div class="portfolio-img">
                         <img src="CIH.png" alt="CIH Programming Website">
                     </div>
@@ -95,7 +97,7 @@
                     </div>
                 </div>
                 
-                <div class="portfolio-item" data-category="web">
+                <div class="portfolio-item" data-category="web" data-aos="zoom-in" data-aos-delay="300">
                     <div class="portfolio-img">
                         <img src="Language.png" alt="Language AI Website">
                     </div>
@@ -135,6 +137,17 @@
     <!-- ===== CUSTOM CURSOR ===== -->
     <div class="cursor-dot"></div>
     <div class="cursor-ring"></div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+        easing: 'ease-in-out'
+      });
+    </script>
 
     <script src="main.js"></script>
     <script src="portfolio.js"></script>

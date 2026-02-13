@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Creative Developer</title>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -26,7 +28,7 @@
     </header>
 
     <!-- Contact Hero -->
-    <section class="page-hero contact-hero">
+    <section class="page-hero contact-hero" data-aos="fade-up">
         <div class="container">
             <div class="page-hero-content">
                 <h1>Get In Touch</h1>
@@ -39,7 +41,7 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="contact-container">
-                <div class="contact-info">
+                <div class="contact-info" data-aos="fade-right">
                     <h3>Contact Information</h3>
                     <p>I'm currently available for freelance projects or full-time opportunities. If you have a website or mobile app idea in mind, feel free to contact me.</p>
                     
@@ -82,7 +84,7 @@
                     </div>
                 </div>
                 
-                <div class="contact-form">
+                <div class="contact-form" data-aos="fade-left">
                     <h3>Send Me a Message</h3>
                     <form id="contactForm">
                         <div class="form-group">
@@ -144,6 +146,17 @@
     <!-- ===== CUSTOM CURSOR ===== -->
     <div class="cursor-dot"></div>
     <div class="cursor-ring"></div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+        easing: 'ease-in-out'
+      });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="main.js"></script>
