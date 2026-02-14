@@ -41,7 +41,14 @@
                     </div>
                 </div>
                 <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" alt="Developer workspace">
+                    <picture>
+                        <!-- WebP version (optimized) -->
+                        <source srcset="hero-workspace.webp" type="image/webp">
+                        <!-- Fallback original (external) -->
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" 
+                             alt="Developer workspace" 
+                             loading="eager"> <!-- above the fold, eager -->
+                    </picture>
                 </div>
             </div>
         </div>
@@ -92,7 +99,12 @@
                         <blockquote>"The web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past."</blockquote>
                         <div class="quote-author">
                             <div class="author-image">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg/200px-Sir_Tim_Berners-Lee_%28cropped%29.jpg" alt="Tim Berners-Lee">
+                                <picture>
+                                    <source srcset="tim-berners-lee.webp" type="image/webp">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg/200px-Sir_Tim_Berners-Lee_%28cropped%29.jpg" 
+                                         alt="Tim Berners-Lee" 
+                                         loading="lazy">
+                                </picture>
                             </div>
                             <div class="author-info">
                                 <h4>Tim Berners-Lee</h4>
@@ -104,7 +116,10 @@
                         <blockquote>“Code is just the beginning—success is what you build with it.”</blockquote>
                         <div class="quote-author">
                             <div class="author-image">
-                                <img src="YOOO.jpeg" alt="Marvelous Adegbule">
+                                <picture>
+                                    <source srcset="marvelous.webp" type="image/webp">
+                                    <img src="YOOO.jpeg" alt="Marvelous Adegbule" loading="lazy">
+                                </picture>
                             </div>
                             <div class="author-info">
                                 <h4>Marvelous Adegbule</h4>
@@ -116,7 +131,10 @@
                         <blockquote>“Don't let the noise of others' opinions drown out your own inner voice.”</blockquote>
                         <div class="quote-author">
                             <div class="author-image">
-                                <img src="images.jpg" alt="Steve Jobs">
+                                <picture>
+                                    <source srcset="steve-jobs.webp" type="image/webp">
+                                    <img src="images.jpg" alt="Steve Jobs" loading="lazy">
+                                </picture>
                             </div>
                             <div class="author-info">
                                 <h4>Steve Jobs</h4>
@@ -150,7 +168,10 @@
             <div class="projects-preview">
                 <div class="project-card" data-aos="fade-right">
                     <div class="project-img">
-                        <img src="Temour.png" alt="Grill Shop">
+                        <picture>
+                            <source srcset="grill-shop.webp" type="image/webp">
+                            <img src="Temour.png" alt="Grill Shop" loading="lazy">
+                        </picture>
                     </div>
                     <div class="project-info">
                         <h3>Grill Shop</h3>
@@ -160,7 +181,10 @@
                 </div>
                 <div class="project-card" data-aos="fade-left">
                     <div class="project-img">
-                        <img src="Screenshot 2025-10-23 161946.png" alt="Flappy-bird">
+                        <picture>
+                            <source srcset="flappy-bird.webp" type="image/webp">
+                            <img src="Screenshot 2025-10-23 161946.png" alt="Flappy-bird" loading="lazy">
+                        </picture>
                     </div>
                     <div class="project-info">
                         <h3>Flappy-bird</h3>
