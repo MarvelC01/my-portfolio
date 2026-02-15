@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Basic validation
             if (!name || !email || !subject || !message) {
-                alert('⚠️ Please fill in all required fields.');
+                alert(' Please fill in all required fields.');
                 return;
             }
             
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Show sending status
             const submitBtn = contactForm.querySelector('.form-btn');
             const originalText = submitBtn.textContent;
-            submitBtn.textContent = '⏳ Sending...';
+            submitBtn.textContent = ' Sending...';
             submitBtn.disabled = true;
             
             // Send email via EmailJS
@@ -45,11 +45,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 templateParams
             ).then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
-                alert(`✅ Thank you ${name}! Your message has been sent successfully. I'll get back to you soon.`);
+                alert(` Thank you ${name}! Your message has been sent successfully. I'll get back to you soon.`);
                 contactForm.reset();
             }, function(error) {
                 console.log('FAILED...', error);
-                alert('❌ Oops! Something went wrong. Please try again or email me directly at adegbulesina@gmail.com');
+                alert(' Oops! Something went wrong. Please try again or email me directly at adegbulesina@gmail.com');
             }).finally(function() {
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
