@@ -1,6 +1,6 @@
 // Initialize EmailJS with your Public Key
 (function() {
-    emailjs.init("osIxGQD6Gn9ZRITxR"); // 🔁 Replace with your actual Public Key
+    emailjs.init("osIxGQD6Gn9ZRITxR"); // Your Public Key
 })();
 
 // Contact form submission
@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const email = document.getElementById('email').value.trim();
             const subject = document.getElementById('subject').value.trim();
             const message = document.getElementById('message').value.trim();
-            const budget = document.getElementById('budget')?.value || 'Not specified';
             
             // Basic validation
             if (!name || !email || !subject || !message) {
@@ -24,13 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Prepare template parameters (match your EmailJS template variables)
+            // Prepare template parameters (budget removed)
             const templateParams = {
                 from_name: name,
                 from_email: email,
                 subject: subject,
                 message: message,
-                budget: budget,
                 to_email: 'adegbulesina@gmail.com' // Your email
             };
             
@@ -42,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Send email via EmailJS
             emailjs.send(
-                'marvel.gmail', // 🔁 Replace with your Service ID
-                'template_qjgr4y5', // 🔁 Replace with your Template ID
+                'marvel.gmail', // Your Service ID
+                'template_qjgr4y5', // Your Template ID
                 templateParams
             ).then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
@@ -51,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 contactForm.reset();
             }, function(error) {
                 console.log('FAILED...', error);
-                alert('❌ Oops! Something went wrong. Please try again or email me directly at adegbuletimilehin@gmail.com');
+                alert('❌ Oops! Something went wrong. Please try again or email me directly at adegbulesina@gmail.com');
             }).finally(function() {
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
